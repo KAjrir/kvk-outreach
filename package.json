@@ -1,0 +1,25 @@
+{
+  "name": "kvk-outreach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pipeline": "mkdir -p logs && node jobs/pipeline.js 2>&1 | tee logs/pipeline-$(date +%Y%m%d-%H%M%S).log",
+    "server": "node --watch src/api.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "@sendgrid/mail": "^8.1.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "puppeteer": "^24.40.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "random-useragent": "^0.5.0"
+  }
+}

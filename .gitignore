@@ -1,0 +1,9 @@
+node_modules/
+
+# Secrets
+.env
+
+# Runtime output (bevat bedrijfsgegevens)
+screenshots/
+logs/
+*.log
