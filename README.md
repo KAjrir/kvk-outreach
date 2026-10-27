@@ -19,6 +19,10 @@ Gouden Gids ──► scraper ──► screenshot ──► AI score ──► 
 6. **Send** – approved emails are sent through SendGrid and marked as emailed.
 7. **Notify** – after each run a summary is sent to Telegram.
 
+## Architecture
+
+![Architecture](docs/architecture.png)
+
 ## Tech stack
 
 | Part | Technology |
